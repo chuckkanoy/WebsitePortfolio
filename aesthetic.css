@@ -35,4 +35,21 @@ li a.active {
 
 body {
     font-family: 'Prompt', sans-serif;
+    text-align: center;
+}
+
+table {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(24, 0, 0);
+    color: white;
+}
+
+td {
+    text-decoration: none;
+    color: black;
 }
