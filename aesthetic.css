@@ -11,6 +11,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    border-radius: 5px;
 }
 
 li {
@@ -50,6 +51,7 @@ table {
     text-align: center;
     border-collapse: collapse;
     width: 75%;
+    border-radius: 5px;
 }
 
 tr:nth-child(even) {
@@ -94,4 +96,5 @@ td a:hover {
 .projects {
     display: inline-block;
     width: 50%;
+    text-align: left;
 }
