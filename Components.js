@@ -1,5 +1,5 @@
 // Makeshift components
-const HEADER = `<h1>Chuck Kanoy</h1>
+const HEADER = `<h1>Charles Kanoy</h1>
 <ul>
     <li><a class="active" href="index.html">About</a></li>
     <li><a href="resume.html">Resume</a></li>
