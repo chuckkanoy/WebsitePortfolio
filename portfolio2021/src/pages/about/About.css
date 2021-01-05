@@ -1,0 +1,7 @@
+.about {
+    width: 50%;
+    text-align: left;
+    overflow: scroll;
+    font-size: 20px;
+    margin-left: 25%;
+}

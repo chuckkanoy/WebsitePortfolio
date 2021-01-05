@@ -1,0 +1,20 @@
+{
+    "projects": [
+        {
+            "Test Project": {
+                "dateStarted": "10/10/2020",
+                "dateEnded": "10/20/2020",
+                "description": "This is a test project",
+                "thumbnail": "https://res.cloudinary.com/practicaldev/image/fetch/s--4nVcu5jx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://cdn.dribbble.com/users/722835/screenshots/4082720/bot_icon.gif"
+            }
+        },
+        {
+            "Dungeons": {
+                "dateStarted": "10/10/2020",
+                "dateEnded": "10/20/2020",
+                "description": "A dungeon crawler I made to learn Python and get familiar with the pygame library",
+                "thumbnail": "https://res.cloudinary.com/practicaldev/image/fetch/s--4nVcu5jx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://cdn.dribbble.com/users/722835/screenshots/4082720/bot_icon.gif"
+            }
+        }
+    ]
+}

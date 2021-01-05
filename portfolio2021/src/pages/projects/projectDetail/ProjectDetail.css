@@ -1,0 +1,12 @@
+.detailContainer {
+    width: 75%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #7b7f86;
+    border-radius: 5px;
+}
+
+.detailHeader {
+    display: flex;
+    justify-content: space-between;
+}
