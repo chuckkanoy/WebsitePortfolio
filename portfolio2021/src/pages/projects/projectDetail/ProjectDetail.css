@@ -4,9 +4,38 @@
     margin: 10px;
     background-color: #7b7f86;
     border-radius: 5px;
+    text-align: left;
 }
 
 .detailHeader {
     display: flex;
     justify-content: space-between;
 }
+
+.github {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+}
+
+.github:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.github:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+

@@ -8,7 +8,6 @@ function ProjectCard(props) {
 
     const {project} = props;
     const title = Object.keys(project)[0];
-    console.log(Object.keys(project));
     const {dateStarted, dateEnded, description, thumbnail} = project[title];    
     // let screenshots = [];
     // images.forEach(image => {
