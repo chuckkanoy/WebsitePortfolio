@@ -1,13 +1,13 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import './App.css';
-import Header from './components/Header';
+import Header from './components/header/Header';
 import About from './pages/about/About';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Home from './pages/home/Home';
 import Projects from './pages/projects/Projects';
-import Resume from './pages/Resume';
+import Resume from './pages/resume/Resume';
 import Opening from './pages/opening/Opening';
 import ProjectDetail from './pages/projects/projectDetail/ProjectDetail';
 

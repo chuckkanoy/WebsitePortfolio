@@ -1,0 +1,14 @@
+.dropdownClicker {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #7b7f86;
+    border-radius: 2px;
+    margin: 5px;
+    text-align: left;
+}
+
+.dropdown {
+    padding: 10px;
+    text-align: left;
+    white-space: pre;
+}

@@ -3,7 +3,14 @@ import {Link} from 'react-router-dom';
 
 import './Header.scss';
 
-const pages = ["Home", "Projects", "Blog", "About", "Resume", "Contact"];
+const pages = [
+    "Home",
+    "Projects", 
+    // "Blog", 
+    "About", 
+    "Resume", 
+    // "Contact"
+];
 
 function Header() {
     return (
@@ -11,7 +18,7 @@ function Header() {
             <Link className="navName" to="/"><h1>Charles Kanoy</h1></Link>
             {pages.map(page => {
                 return (
-                    <Link className="navLink" to={`/${page.toLowerCase()}`}>{page}</Link>
+                    <Link className="navLink" to={`/${page.toLowerCase()}`} key={page}>{page}</Link>
                 );
             })}
         </div>

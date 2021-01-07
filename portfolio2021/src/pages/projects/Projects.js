@@ -8,7 +8,8 @@ function Projects() {
     return (
         <div className="projectsContainer">
             {data.projects.map((individual) => {
-                return <ProjectCard project={individual}/>
+                const title = Object.keys(individual)[0];
+                return <ProjectCard project={individual} key={title}/>
             })}
         </div>
     );

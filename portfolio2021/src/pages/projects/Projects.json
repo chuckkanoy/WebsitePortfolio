@@ -23,6 +23,18 @@
                 "category": "Personal",
                 "github": "https://github.com/chuckkanoy/improv_adventure_website"
             }
+        },
+        {
+            "Jot It: Mobile Journal": {
+                "dateStarted": "09/2020",
+                "dateEnded": "12/2020",
+                "description": "An app that allows the user to employ CRUD functionality for different journal entries.",
+                "thumbnail": "https://res.cloudinary.com/practicaldev/image/fetch/s--4nVcu5jx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://cdn.dribbble.com/users/722835/screenshots/4082720/bot_icon.gif",
+                "learned": "React Native, JavaScript",
+                "screenshots": [],
+                "category": "Class Project",
+                "github": "https://github.com/chuckkanoy/journal-app"
+            }
         }
     ]
 }
