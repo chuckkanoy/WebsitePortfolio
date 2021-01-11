@@ -9,7 +9,7 @@ const pages = [
     // "Blog", 
     "About", 
     "Resume", 
-    // "Contact"
+    "Contact"
 ];
 
 function Header() {

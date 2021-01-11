@@ -1,0 +1,35 @@
+.contactContainer {
+    align-content: center;
+}
+
+.contactInfo {
+    width: 75%;
+    background-color: aqua;
+}
+
+.email {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.email:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.email:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+hr {
+    width: 50%;
+}

@@ -1,0 +1,40 @@
+{
+    "projects": [
+        {
+            "Dungeons": {
+                "dateStarted": "12/2018",
+                "dateEnded": "1/2020",
+                "description": "A dungeon crawler I made to learn Python and get familiar with the pygame library.",
+                "thumbnail": "hero.png",
+                "learned": "Python and libraries PyGame, NumPy",
+                "screenshots": [],
+                "category": "Personal",
+                "github": "https://github.com/chuckkanoy/Dungeons"
+            }
+        },
+        {
+            "Improv Text Adventure": {
+                "dateStarted": "10/2019",
+                "dateEnded": "4/2020",
+                "description": "A basic text adventure game that uses a graph like structure for navigation between scenes.",
+                "thumbnail": "tbdlogo.png",
+                "learned": "Javascript, HTML, CSS",
+                "screenshots": [],
+                "category": "Personal",
+                "github": "https://github.com/chuckkanoy/improv_adventure_website"
+            }
+        },
+        {
+            "Jot It: Mobile Journal": {
+                "dateStarted": "09/2020",
+                "dateEnded": "12/2020",
+                "description": "An app that allows the user to employ CRUD functionality for different journal entries.",
+                "thumbnail": "jot-it-thumb.jpg",
+                "learned": "React Native, JavaScript",
+                "screenshots": [],
+                "category": "Class Project",
+                "github": "https://github.com/chuckkanoy/journal-app"
+            }
+        }
+    ]
+}

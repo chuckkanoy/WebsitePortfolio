@@ -25,13 +25,12 @@ function ProjectDetail(props) {
             screenshots: null,
             github: null,
         };
-
     return (
         permProject[title] ? (
             <div className="detailContainer">
                 <div className="detailHeader">
                     <a href={github}><h1 className="github">{title}</h1></a>
-                    <img src={thumbnail} className="thumbnail" alt="Thumbnail"/>
+                    <img src={"../" + thumbnail} className="thumbnail" alt="Thumbnail"/>
                 </div>
                 <p>{dateStarted}-{dateEnded}</p>
                 <p>{description}</p>

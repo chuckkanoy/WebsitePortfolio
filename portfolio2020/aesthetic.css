@@ -1,0 +1,100 @@
+h1 {
+    text-align: center;
+}
+
+
+/* navbar styles */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li a.active {
+    background-color: rgb(24, 0, 0);
+}
+
+
+/* body styles */
+
+body {
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+}
+
+
+/* table styles */
+
+table {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-collapse: collapse;
+    width: 75%;
+    border-radius: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(168, 168, 168);
+}
+
+th {
+    background-color: #111;
+    color: white;
+}
+
+td {
+    text-decoration: none;
+    color: black;
+}
+
+td a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+td a:hover {
+    background-color: #333;
+    color: white;
+}
+
+
+/* about page styles */
+
+.personal {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+
+/* projects page styles */
+
+.projects {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}

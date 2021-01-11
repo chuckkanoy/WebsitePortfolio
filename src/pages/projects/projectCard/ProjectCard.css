@@ -1,0 +1,28 @@
+.cardContainer {
+    background-color: #7b7f86;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.cardContainer:hover {
+    background-color: #b1b3b8;
+}
+
+.thumbnailContainer {
+    margin: auto;
+}
+
+.thumbnail {
+    height: 150px;
+    justify-content: center;
+}
+
+.cardDetails {
+    width: 50%;
+    text-align: left;
+}
+
