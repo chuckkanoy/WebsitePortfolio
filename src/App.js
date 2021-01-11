@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {HashRouter as Router, Switch, Route} from 'react-router-dom';
 
 import './App.css';
 import Header from './components/header/Header';
@@ -13,7 +13,7 @@ import ProjectDetail from './pages/projects/projectDetail/ProjectDetail';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Header/>
         <header className="App-header">
