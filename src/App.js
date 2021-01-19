@@ -10,6 +10,7 @@ import Projects from './pages/projects/Projects';
 import Resume from './pages/resume/Resume';
 import Opening from './pages/opening/Opening';
 import ProjectDetail from './pages/projects/projectDetail/ProjectDetail';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path={"/"} component={Opening} />
           </Switch>
         </header>
+        <Footer/>
       </div>
     </Router>
   );
