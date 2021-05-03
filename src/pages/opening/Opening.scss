@@ -14,7 +14,7 @@
 
 .opening[fade='1'] {
     animation-name: fadeOut;
-    animation-duration: 1s;
+    // animation-duration: 1s;
     animation-iteration-count: 1;
 }
 
@@ -28,7 +28,7 @@
     color: violet;
 	text-decoration: none;
 	transform: translate(0%, 0%);
-	animation-name: fadeIn;
+	// animation-name: fadeIn;
     animation-duration: 1s;
     background-color: #282c34;
     height: 10%;
