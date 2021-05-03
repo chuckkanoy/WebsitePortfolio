@@ -6,7 +6,7 @@ import './Home.css';
 function Home() {
     return (
         <div className="homeContainer">
-            <h1>Hello there!</h1>
+            <h1>Hello World!</h1>
             <hr />
             <div className="summary">
                 As you can probably guess from the title of this site, I am Charles Kanoy, a
