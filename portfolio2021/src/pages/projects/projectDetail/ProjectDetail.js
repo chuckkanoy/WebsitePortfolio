@@ -2,7 +2,7 @@ import React from 'react';
 // import useHistory from 'react-router-dom';
 
 import './ProjectDetail.css'
-import * as data from './../Projects.json';
+import * as data from '../Projects.json';
 
 function ProjectDetail(props) {
     const {title} = props.match.params;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {MDBIcon, MDBContainer, MDBBtn} from 'mdbreact';
+import {MDBIcon, MDBContainer} from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import './Footer.css';

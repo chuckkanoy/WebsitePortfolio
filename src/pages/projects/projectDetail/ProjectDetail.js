@@ -1,8 +1,7 @@
 import React from 'react';
-// import useHistory from 'react-router-dom';
 
 import './ProjectDetail.css'
-import * as data from './../Projects.json';
+import * as data from '../Projects.json';
 
 function ProjectDetail(props) {
     const {title} = props.match.params;
@@ -14,7 +13,7 @@ function ProjectDetail(props) {
             return;
         }
     });
-    const {dateStarted, dateEnded, description, thumbnail, learned, screenshots, github} = permProject[title] ? 
+    const {dateStarted, dateEnded, description, thumbnail, learned, github} = permProject[title] ? 
         permProject[title] :
         {
             dateStarted: null, 
