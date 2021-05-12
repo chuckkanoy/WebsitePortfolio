@@ -51,7 +51,7 @@ export default function BlogDetail() {
             }} {...props} />
         }}
         className="markdown">
-            {`${subject}&emsp;&emsp;${date}\n${blogContent}`}
+            {`${subject}&emsp;&emsp;👾${date}\n${blogContent}`}
         </ReactMarkdown>
     );
 }
