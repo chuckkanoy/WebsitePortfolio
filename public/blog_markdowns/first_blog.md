@@ -16,4 +16,4 @@ In the future, I'd like to include the following features in the blog portion of
 
 - Handling of enhanced markdown features.
 
-*Thank you so much for reading. Stay curious!* [1F47E](https://i.imgur.com/v7c1kEZ.gif)
+*Thank you so much for reading. Stay curious!* [&#1F47E;](https://i.imgur.com/v7c1kEZ.gif)
