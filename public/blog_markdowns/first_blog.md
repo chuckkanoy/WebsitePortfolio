@@ -16,4 +16,4 @@ In the future, I'd like to include the following features in the blog portion of
 
 - Handling of enhanced markdown features.
 
-*Thank you so much for reading. Stay curious!* [👾](https://github.com/remarkjs/react-markdown)
+*Thank you so much for reading. Stay curious!* [👾](https://i.imgur.com/v7c1kEZ.gif)
