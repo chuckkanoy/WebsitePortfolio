@@ -1,6 +1,6 @@
 import React, {useState, useEffect}from 'react';
 import ReactMarkdown from 'react-markdown';
-import { useParams } from 'react-router';
+import { useHistory, useParams } from 'react-router';
 import test_blogs from '../Blogs.json';
 import './BlogDetail.css';
 
@@ -10,6 +10,7 @@ export default function BlogDetail() {
     const [subject, setSubject] = useState("");
 
     var {blog} = useParams();
+    var history = useHistory();
 
     useEffect(() => {
         var pathRoute = "";
@@ -19,8 +20,10 @@ export default function BlogDetail() {
                 pathRoute = test.pathRoute;
                 setDate(test.date);
                 setSubject(test.subject);
-            } 
+            }
         });
+
+        if(pathRoute === "") history.push('/blog');
 
         fetch(pathRoute).then(
             (response) => response.text()
@@ -29,7 +32,7 @@ export default function BlogDetail() {
                 setBlogContent(text);
             }
         )
-    }, [blog]);
+    }, [blog, history]);
 
     return (
         <ReactMarkdown
