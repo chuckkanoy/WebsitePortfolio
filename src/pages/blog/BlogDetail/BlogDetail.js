@@ -42,7 +42,7 @@ export default function BlogDetail() {
             }} {...props} />,
             a: ({node, ...props}) => <a style={{
                 color: '#ee82ee'
-            }} {...props} >{null}</a>,
+            }} {...props} >{}</a>,
             blockquote: ({node, ...props}) => <div style={{
                 backgroundColor: 'white',
                 color: '#ee82ee',
