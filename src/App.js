@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';
 import About from './pages/about/About';
-import Blog from './pages/Blog';
+import Blog from './pages/blog/Blog';
 import Contact from './pages/contact/Contact';
 import Home from './pages/home/Home';
 import Projects from './pages/projects/Projects';
@@ -11,8 +11,24 @@ import Resume from './pages/resume/Resume';
 import Opening from './pages/opening/Opening';
 import ProjectDetail from './pages/projects/projectDetail/ProjectDetail';
 import Footer from './components/footer/Footer';
+import BlogDetail from './pages/blog/BlogDetail/BlogDetail';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  })
+
+  useEffect(() => {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth
+      })
+
+      console.log(dimensions);
+  }, [])
+
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
@@ -20,6 +36,7 @@ function App() {
         <header className="App-header">
           <Switch>
             <Route path="/about" component={About} />
+            <Route path="/blog/:blog" component={BlogDetail}/>
             <Route path="/blog" component={Blog} />
             <Route path="/contact" component={Contact} />
             <Route path="/projects/:title" component={ProjectDetail} />

@@ -1,0 +1,10 @@
+.markdown {
+    width: 75%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.markdown h1, h2{
+    text-align: center;
+}
+

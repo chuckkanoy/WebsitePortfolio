@@ -1,0 +1,20 @@
+.blockCardList {
+    font-size: 20px;
+    color: white;
+    background-color: #7b7f86;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: left;
+    /* display: table-cell; */
+}
+
+.blockCardList:hover {
+    background-color: white;
+    color: #ee82ee;
+}
+
+.blockCardList li {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}

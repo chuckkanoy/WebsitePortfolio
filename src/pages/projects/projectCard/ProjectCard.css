@@ -9,7 +9,8 @@
 }
 
 .cardContainer:hover {
-    background-color: #b1b3b8;
+    background-color: white;
+    color: #ee82ee;
 }
 
 .thumbnailContainer {
@@ -17,7 +18,12 @@
 }
 
 .thumbnail {
-    height: 150px;
+    height: 135px;
+    justify-content: center;
+}
+
+.thumbnailMobile {
+    height: 75px;
     justify-content: center;
 }
 

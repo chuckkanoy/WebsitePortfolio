@@ -17,6 +17,14 @@ function ProjectCard(props) {
     const abridged = description.length > limit ? 
         description.slice(0, limit) + "..." :
         description;
+    
+    const formattedThumbnail = window.innerWidth < 1000 ? 
+            <div className="thumbnailContainer">
+                <img src={thumbnail} className="thumbnailMobile" alt="Thumbnail"/>
+            </div> :
+            <div className="thumbnailContainer">
+                <img src={thumbnail} className="thumbnail" alt="Thumbnail"/>
+            </div>
 
     return (
         <div 
@@ -30,9 +38,7 @@ function ProjectCard(props) {
                 <p>{dateStarted}-{dateEnded}</p>
                 <p>{abridged}</p>
             </div>
-            <div className="thumbnailContainer">
-                <img src={thumbnail} className="thumbnail" alt="Thumbnail"/>
-            </div>
+            {formattedThumbnail}
         </div>
     );
 }
