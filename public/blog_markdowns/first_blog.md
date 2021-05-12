@@ -16,4 +16,4 @@ In the future, I'd like to include the following features in the blog portion of
 
 - Handling of enhanced markdown features.
 
-*Thank you so much for reading. Stay curious!* :space_invader:
+*Thank you so much for reading. Stay curious!* [:space_invader:](https://i.imgur.com/v7c1kEZ.gif)
