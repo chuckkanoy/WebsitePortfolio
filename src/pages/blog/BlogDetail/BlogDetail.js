@@ -12,15 +12,17 @@ export default function BlogDetail() {
     var {blog} = useParams();
 
     useEffect(() => {
+        var pathRoute = "";
+
         test_blogs.forEach((test) => {
-            if(test.id == blog) {
-                blog = test;
+            if(test.id === blog) {
+                pathRoute = test.pathRoute;
                 setDate(test.date);
                 setSubject(test.subject);
             } 
         });
 
-        fetch(blog.pathRoute).then(
+        fetch(pathRoute).then(
             (response) => response.text()
         ).then(
             (text) => {
@@ -40,7 +42,7 @@ export default function BlogDetail() {
             }} {...props} />,
             a: ({node, ...props}) => <a style={{
                 color: '#ee82ee'
-            }} {...props} />,
+            }} {...props} >{null}</a>,
             blockquote: ({node, ...props}) => <div style={{
                 backgroundColor: 'white',
                 color: '#ee82ee',

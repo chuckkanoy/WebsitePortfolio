@@ -12,23 +12,8 @@ import Opening from './pages/opening/Opening';
 import ProjectDetail from './pages/projects/projectDetail/ProjectDetail';
 import Footer from './components/footer/Footer';
 import BlogDetail from './pages/blog/BlogDetail/BlogDetail';
-import { useEffect, useState } from 'react';
 
 function App() {
-  const [dimensions, setDimensions] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
-  })
-
-  useEffect(() => {
-      setDimensions({
-        height: window.innerHeight,
-        width: window.innerWidth
-      })
-
-      console.log(dimensions);
-  }, [])
-
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
