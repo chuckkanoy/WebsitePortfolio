@@ -9,7 +9,7 @@ function About() {
             <hr/>
             <div className="about">
                 Hello, I am Charles Kanoy, but I tend to go by Chuck. Computers as a whole interest me
-                from the highest level down to the lowest. Other things that interest me include, but
+                from the highest level down to the lowest. All things sci-fi excite me. Other things that interest me include, but
                 are not limited to, reading, writing, making and watching videos on YouTube, playing
                 video games, watching movies, and practicing improv comedy.
                 <br/><br/>
@@ -18,7 +18,7 @@ function About() {
                 Given enough time and effort, I believe that any adversity can be overcome. I think this
                 perspective comes from the variety of people I've met during my upbringing.
                 <br/><br/>
-                I grew up a military brat, so I've had to move around a bit. This has brought me to
+                I grew up a military "brat", so I've had to move around a bit. This has brought me to
                 be more adaptive to whatever challenge may come my way. This also makes me predisposed
                 to move if needed.
             </div>
