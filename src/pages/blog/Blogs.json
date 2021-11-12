@@ -4,8 +4,6 @@
         "title": "First Blog",
         "subject": "Development",
         "pathRoute": "/blog_markdowns/first_blog.md",
-        "date": "5/12/2021",
-        "secret": "👾",
-        "secretLink": "https://i.imgur.com/v7c1kEZ.gif"
+        "date": "5/12/2021"
     }
 ]
