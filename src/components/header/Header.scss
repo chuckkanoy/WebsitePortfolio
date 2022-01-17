@@ -1,42 +1,33 @@
-.navContainer h1.glitch::before, .navContainer h1.glitch::after {
-    margin-top: 5%;
-    height: 20px;
-}
-
 .navContainer {
     background-color: #282c34;
     text-align: center;
     color: #ee82ee;
     left: 50%;
     margin-top: -22px;
-}
-
-.glitch:hover {
-    font-weight: bold;
-    color: #ffffff;
+    align-content: center;
 }
 
 .navName {
     color: #ee82ee;
     text-decoration: none;
+}
+
+.navName:hover {
+    color: #FFFFFF;
+    text-decoration: none;
     animation-name: flicker-1;
-    animation-duration: 1s;
+    animation-duration: .2s;
     animation-timing-function: linear;
-	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
 }
 
 @keyframes flicker-1{
-    0% {text-shadow: 0px 0px #0f8100;}
-    33% {text-shadow: 0px 5px #ff5dff;}
-    // 50% {text-shadow: 0px 0px #0f8100;}
-    66% {text-shadow: 0px -5px #ff5dff;}
-    100% {text-shadow: 0px 0px #0f8100;}
+    from {
+        text-shadow: 0px 0px #ff5dff;
+    } to {
+        text-shadow: 0px 5px #ff5dff;
+    }
   }
-
-.navName:hover {
-    font-weight: bold;
-    color: #ffffff;
-}
 
 .navLink {
     margin-top: 20px;

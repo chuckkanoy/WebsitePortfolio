@@ -15,7 +15,7 @@ const pages = [
 function Header() {
     return (
         <div className="navContainer">
-            <Link className="navName" to="/"><h1>Charles Kanoy</h1></Link>
+            <h1><Link className="navName" to="/">Charles Kanoy</Link></h1>
             {pages.map(page => {
                 return (
                     <Link className="navLink" to={`/${page.toLowerCase()}`} key={page}>{page}</Link>

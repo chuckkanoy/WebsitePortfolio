@@ -1,24 +1,43 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 import './Home.css';
 
 function Home() {
+    const [homeContent, setHomeContent] = useState("");
+    
+    useEffect(() => {
+        fetch("/page_markdowns/home.md").then(
+            (response) => response.text()
+        ).then(
+            (text) => {
+                setHomeContent(text);
+            }
+        )
+    });
+    
     return (
-        <div className="homeContainer">
-            <h1>Hello World!</h1>
-            <hr />
-            <div className="summary">
-                As you can probably guess from the title of this site, I am Charles Kanoy, an alumn of NDSU Spring 2021. 
-                I'm currently employed by a contingent of John Deere as an Embedded Systems Engineer. In my spare
-                time, I'm either researching new aspects of programming and computers, spending time with those I hold
-                dear, cooking, or reading. In my professional free time, I'm sharpening skills game dev skills in Unity and
-                Godot.
-                <br/>
-                <br/>
-                <Link to="/about" className="learn">Click here to learn more about me!</Link>
-            </div>
-        </div>
+        <ReactMarkdown
+        components={{
+            code: ({node, ...props}) => <span style={{
+                backgroundColor: 'white',
+                color: '#ee82ee',
+                padding: '0px',
+                borderRadius: '4px',
+            }} {...props} />,
+            a: ({node, ...props}) => <a className='md' 
+            {...props} >{}</a>
+            ,
+            blockquote: ({node, ...props}) => <div style={{
+                backgroundColor: 'white',
+                color: '#ee82ee',
+                padding: '0px',
+                borderRadius: '4px'
+            }} {...props} />
+        }}
+        className="markdown">
+            {`${homeContent}`}
+        </ReactMarkdown>
     );
 }
 

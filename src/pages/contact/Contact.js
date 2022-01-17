@@ -1,17 +1,52 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import ReactMarkdown from 'react-markdown';
 
-import {MAIL_TO, EMAIL} from '../../components/Constants';
 import './Contact.css';
 
 function Contact() {
+    // return (
+    //     <div>
+    //         <h1>Looking to get ahold of me?</h1>
+    //         <hr/>
+    //         <div className="about">
+    //             Email me at <a className="email" href={MAIL_TO}>{EMAIL}</a>
+    //         </div>
+    //     </div>
+    // );
+    const [homeContent, setHomeContent] = useState("");
+    
+    useEffect(() => {
+        fetch("/page_markdowns/contact.md").then(
+            (response) => response.text()
+        ).then(
+            (text) => {
+                setHomeContent(text);
+            }
+        )
+    });
+    
     return (
-        <div>
-            <h1>Looking to get ahold of me?</h1>
-            <hr/>
-            <div className="about">
-                Email me at <a className="email" href={MAIL_TO}>{EMAIL}</a>
-            </div>
-        </div>
+        <ReactMarkdown
+        components={{
+            code: ({node, ...props}) => <span style={{
+                backgroundColor: 'white',
+                color: '#ee82ee',
+                padding: '0px',
+                borderRadius: '4px',
+            }} {...props} />,
+            a: ({node, ...props}) => <a className='md' 
+            {...props} >{}</a>
+            ,
+            blockquote: ({node, ...props}) => <div style={{
+                backgroundColor: 'white',
+                color: '#ee82ee',
+                padding: '0px',
+                borderRadius: '4px'
+            }} {...props} />
+        }}
+        className="markdown">
+            {`${homeContent}`}
+        </ReactMarkdown>
     );
 }
 
