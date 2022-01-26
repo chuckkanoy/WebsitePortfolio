@@ -5,7 +5,6 @@
     padding: 10px;
     border-radius: 3px;
     text-align: left;
-    /* display: table-cell; */
 }
 
 .blockCardList:hover {
@@ -17,4 +16,13 @@
     display: inline-block;
     width: 33%;
     text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .blockCardList li {
+        display: grid;
+        margin: 10px;
+        padding-top: 5px;
+        text-align: left;
+    }
 }

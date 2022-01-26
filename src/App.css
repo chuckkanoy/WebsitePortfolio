@@ -2,20 +2,18 @@
   text-align: center;
   animation-name: fadeIn;
   animation-duration: 2;
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-.App-header {
   background-color: #282c34;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: #ffffff;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 .App-link {

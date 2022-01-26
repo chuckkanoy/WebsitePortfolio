@@ -3,12 +3,18 @@
     padding: 10px;
     background-color: #7b7f86;
     border-radius: 2px;
-    margin: 5px;
+    /* margin: 5px; */
     text-align: left;
 }
 
 .dropdown {
     padding: 10px;
     text-align: left;
-    white-space: pre;
+    overflow-wrap: break-word;
+    width: 100%;
+}
+
+.dropdownContainer {
+    width: 100%;
+    overflow-wrap: break-word;
 }

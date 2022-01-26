@@ -2,6 +2,8 @@ import React from 'react';
 
 import Dropdown from '../../components/dropdown/Dropdown';
 import './Resume.css';
+import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
 
 function Resume() {
     const skills = {
@@ -35,8 +37,7 @@ function Resume() {
         weaknesses: [
             "Delegation",
             "Gauging group interest",
-            "Estimating time to completion",
-            ""
+            "Estimating time to completion"
         ]
     };
 
@@ -47,7 +48,7 @@ function Resume() {
                     <div className="leadershipContainer">
                         <h3>{skill}</h3>
                         {skills[skill].map(string => {
-                            return <p>&emsp;&emsp;{string}</p>;
+                            return <p className='resumeDetails'>{string}</p>;
                         })}
                     </div>
                 )
@@ -67,6 +68,13 @@ function Resume() {
 
 
     const workExperience = [
+        {
+            "Embedded Software Engineer": {
+                org: "John Deere",
+                location: "Fargo, ND",
+                duration: "06/2021-Present"
+            }
+        },
         {
             "Software Engineer Intern": {
                 org: "Bushel",
@@ -88,7 +96,7 @@ function Resume() {
             "Treasurer": {
                 org: "To Be Determined Comedy",
                 location: "North Dakota State University",
-                duration: "08/2020-Present"
+                duration: "08/2020-05/2021"
             }
         },
         {
@@ -121,10 +129,10 @@ function Resume() {
                 <div className="leadershipContainer">
                     <div className="leadershipHeader">
                         <h3>{status}</h3>
-                        <h3 className="dates">{individual[status].duration}</h3>
+                        <p className="dates">{individual[status].duration}</p>
                     </div>
-                    <p>&emsp;{individual[status].org}</p>
-                    <p>&emsp;{individual[status].location}</p>
+                    <p>{individual[status].org}</p>
+                    <p>{individual[status].location}</p>
                 </div>
             );
         })
@@ -132,6 +140,7 @@ function Resume() {
 
     return (
         <>
+            <Header />
             <p className="objective">
                 <text className="declaration">var </text>
                 <text className="variableName">objective</text>=
@@ -143,6 +152,7 @@ function Resume() {
                 <Dropdown title="Professional Development Experience" content={display(workExperience)} />
                 <Dropdown title="Leadership" content={display(leadership)} />
             </div>
+            <Footer />
         </>
     );
 }

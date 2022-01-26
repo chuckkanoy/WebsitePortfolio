@@ -1,3 +1,9 @@
 .projectsContainer {
     width: 90%;
 }
+
+@media screen and (max-width: 1000px) {
+    .projectsContainer {
+        width: 100%;
+    }
+}

@@ -3,7 +3,7 @@
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 5px;
-    margin: 10px;
+    margin-top: 10px;
     display: flex;
     width: 100%;
 }
@@ -30,5 +30,22 @@
 .cardDetails {
     width: 50%;
     text-align: left;
+}
+
+.languages {
+    display: flex;
+}
+
+.languages * {
+    padding: 5px;
+    margin-left: 5px;
+    background-color: #282c34;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1000px) {
+    .cardContainer {
+        width: 100%;
+    }
 }
 

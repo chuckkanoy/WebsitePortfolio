@@ -1,31 +1,57 @@
 .resumeContainer {
-    width: 75%;
+    max-width: 100%;
+    width: 90%;
     background-color: #5f72a5;
-    border-radius: 5px;
-    margin: 10px;
 }
 
-.leadershipContainer {
+.leadershipContainer * {
+    width: 95%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.leadershipContainer h3 {
+    text-decoration: underline;
+}
+
+.resumeDetails {
     font-size: 20px;
 }
 
 .leadershipHeader {
+    max-width: 100%;
     display: flex;
-    justify-content: space-between;
+}
+
+.dates {
+    text-align: right;
 }
 
 .objective {
     font-size: 20px;
 }
 
-.declaration {
-    color: #01018a;
-}
-
-.variableName {
-    color: #01afa1;
-}
-
 .literal {
     color: #b17300;
+}
+
+@media screen and (max-width: 1000px) {
+    .resumeContainer {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .leadershipContainer {
+        width: 100%;
+    }
+
+    .leadershipHeader {
+        display: inline;
+    }
+
+    .dates {
+        text-align: left;
+        text-decoration: none;
+    }
 }

@@ -11,12 +11,8 @@ function Opening() {
         <div
             className="opening"
             onClick={() => {
-                setFade(1);
+                history.push('/home');
             }}
-            onAnimationEnd={() => {
-                if(fade === 1) history.push('/home');
-            }}
-            fade={fade}
         >
             <h1 className="glow">Charles Kanoy</h1>
         </div>
