@@ -1,7 +1,6 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import './App.css';
-import Header from './components/header/Header';
 import About from './pages/about/About';
 import Blog from './pages/blog/Blog';
 import Contact from './pages/contact/Contact';
@@ -9,7 +8,6 @@ import Home from './pages/home/Home';
 import Projects from './pages/projects/Projects';
 import Resume from './pages/resume/Resume';
 import Opening from './pages/opening/Opening';
-import Footer from './components/footer/Footer';
 import BlogDetail from './pages/blog/BlogDetail/BlogDetail';
 
 function App() {

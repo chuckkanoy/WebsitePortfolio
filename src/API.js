@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const GITHUB_PROJECTS = 'https://api.github.com/users/chuckkanoy';
 
 export async function get(url) {
