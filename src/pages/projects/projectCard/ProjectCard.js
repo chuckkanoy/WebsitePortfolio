@@ -36,6 +36,7 @@ function ProjectCard(props) {
                 window.location.href = project.html_url;
             }}
             key={project.id}
+            style={{backgroundColor: props.backgroundColor}}
         >
             <div className="cardDetails">
                 <h3>{project.name}</h3>

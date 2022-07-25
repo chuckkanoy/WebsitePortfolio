@@ -1,5 +1,9 @@
 .projectsContainer {
-    width: 90%;
+    width: 100%;
+    justify-content: center;
+    margin-left: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1000px) {

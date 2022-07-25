@@ -1,15 +1,16 @@
 .blockCardList {
     font-size: 20px;
-    color: white;
-    background-color: #7b7f86;
+    color: #FCE3CB;
+    background-color: #494947;
     padding: 10px;
     border-radius: 3px;
     text-align: left;
+    font-weight: bold;
 }
 
 .blockCardList:hover {
-    background-color: white;
-    color: #ee82ee;
+    background-color: #7494EA;
+    color: #494947;
 }
 
 .blockCardList li {

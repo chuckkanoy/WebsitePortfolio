@@ -15,12 +15,14 @@ const pages = [
 function Header() {
     return (
         <div className="navContainer">
-            <h1><Link className="navName" to="/">Charles Kanoy</Link></h1>
-            {pages.map(page => {
-                return (
-                    <Link className="navLink" to={`/${page.toLowerCase()}`} key={page}>{page}</Link>
-                );
-            })}
+            <Link className="navName" to="/">Charles Kanoy</Link>
+            <div className='navBar'>
+                {pages.map(page => {
+                    return (
+                        <Link className="navLink" to={`/${page.toLowerCase()}`} key={page}>{page}</Link>
+                    );
+                })}
+            </div>
         </div>
     );
 }

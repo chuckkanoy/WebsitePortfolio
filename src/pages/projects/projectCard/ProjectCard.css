@@ -1,16 +1,17 @@
 .cardContainer {
-    background-color: #7b7f86;
+    /* background-color: #7b7f86; */
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 5px;
     margin-top: 10px;
     display: flex;
-    width: 100%;
+    width: 50%;
+    justify-content: center;
 }
 
 .cardContainer:hover {
     background-color: white;
-    color: #ee82ee;
+    color: #494947;
 }
 
 .thumbnailContainer {
@@ -29,17 +30,19 @@
 
 .cardDetails {
     width: 50%;
-    text-align: left;
+    text-align: center;
 }
 
 .languages {
     display: flex;
+    justify-content: center;
 }
 
 .languages * {
     padding: 5px;
     margin-left: 5px;
-    background-color: #282c34;
+    background-color: #FCE3CB;
+    color: #494947;
     border-radius: 3px;
 }
 

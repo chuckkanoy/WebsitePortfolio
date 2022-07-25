@@ -30,6 +30,9 @@
 
 .objective {
     font-size: 20px;
+    background-color: #494947;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .literal {
