@@ -2,14 +2,13 @@
   text-align: center;
   animation-name: fadeIn;
   animation-duration: 2;
-  background-image: 'seamless.jpg';
+  background-image: 'geo.png';
   background-repeat: repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: #ffffff;
-  /* width: 100%; */
 }
 
 @keyframes fadeIn {

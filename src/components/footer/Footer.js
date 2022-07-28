@@ -7,14 +7,16 @@ import {GITHUB, LINKEDIN} from '../Constants.js';
 
 function Footer() {
     return (
-        <MDBContainer className="footerContainer">
-            <a href={LINKEDIN}>
-                <MDBIcon fab icon="linkedin-in" className="navLink" size="2x"/>
-            </a>
-            <a href={GITHUB}>
-                <MDBIcon fab icon="github" className="navLink" size="2x"/>
-            </a>
-        </MDBContainer>
+        <div className='footerContainer'>
+            <MDBContainer className="footer">
+                <a href={LINKEDIN}>
+                    <MDBIcon fab icon="linkedin-in" className="navLink" size="1x"/>
+                </a>
+                <a href={GITHUB}>
+                    <MDBIcon fab icon="github" className="navLink" size="1x"/>
+                </a>
+            </MDBContainer>
+        </div>
     );
 }
 

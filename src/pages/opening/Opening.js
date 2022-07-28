@@ -1,7 +1,7 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
 
-import './Opening.scss';
+import './Opening.css';
 
 function Opening() {
     const history = useHistory();

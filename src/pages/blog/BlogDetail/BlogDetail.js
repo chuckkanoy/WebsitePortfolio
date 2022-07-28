@@ -3,8 +3,6 @@ import ReactMarkdown from 'react-markdown';
 import { useHistory, useParams } from 'react-router';
 import test_blogs from '../Blogs.json';
 import './BlogDetail.css';
-import Header from '../../../components/header/Header';
-import Footer from '../../../components/footer/Footer';
 
 export default function BlogDetail() {
     const [blogContent, setBlogContent] = useState("");
@@ -38,21 +36,21 @@ export default function BlogDetail() {
 
     return (
         <>
-            <Header />
             <ReactMarkdown
             components={{
                 code: ({node, ...props}) => <span style={{
-                    backgroundColor: 'white',
-                    color: '#ee82ee',
-                    padding: '0px',
+                    backgroundColor: '#fce3cb',
+                    color: '#494947',
+                    fontWeight: 'bold',
+                    padding: '1px',
                     borderRadius: '4px',
                 }} {...props} />,
                 a: ({node, ...props}) => <a style={{
-                    color: '#ee82ee'
+                    color: '#fce3cb'
                 }} {...props} >{}</a>,
                 blockquote: ({node, ...props}) => <div style={{
                     backgroundColor: 'white',
-                    color: '#ee82ee',
+                    color: '#fce3cb',
                     padding: '0px',
                     borderRadius: '4px'
                 }} {...props} />
@@ -60,7 +58,6 @@ export default function BlogDetail() {
             className="markdown">
                 {`${subject}&emsp;&emsp;${date}\n${blogContent}`}
             </ReactMarkdown>
-            <Footer />
         </>
     );
 }

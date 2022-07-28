@@ -2,8 +2,6 @@ import React, {useState, useEffect} from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import './About.css';
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
 
 function About() {
     const [aboutContent, setAboutContent] = useState("");
@@ -20,7 +18,6 @@ function About() {
 
     return (
         <>
-            <Header />
             <ReactMarkdown
             components={{
                 code: ({node, ...props}) => <span style={{
@@ -42,7 +39,6 @@ function About() {
             className="markdown">
                 {`${aboutContent}`}
             </ReactMarkdown>
-            <Footer />
         </>
     );
 }

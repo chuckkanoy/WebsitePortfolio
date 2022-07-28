@@ -2,8 +2,6 @@ import React, {useEffect, useState} from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import './Contact.css';
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
 
 function Contact() {
     const [homeContent, setHomeContent] = useState("");
@@ -20,7 +18,6 @@ function Contact() {
     
     return (
         <>
-            <Header />
             <ReactMarkdown
             components={{
                 code: ({node, ...props}) => <span style={{
@@ -42,7 +39,6 @@ function Contact() {
             className="markdown">
                 {`${homeContent}`}
             </ReactMarkdown>
-            <Footer />
         </>
     );
 }

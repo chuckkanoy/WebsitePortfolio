@@ -7,11 +7,14 @@
     display: flex;
     width: 50%;
     justify-content: center;
+    font-size: 25px;
 }
 
 .cardContainer:hover {
     background-color: white;
     color: #494947;
+    border-width: 10px;
+    border-color: #494947;
 }
 
 .thumbnailContainer {
@@ -29,13 +32,13 @@
 }
 
 .cardDetails {
-    width: 50%;
+    width: 100%;
     text-align: center;
 }
 
 .languages {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .languages * {

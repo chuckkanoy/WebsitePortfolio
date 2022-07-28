@@ -1,7 +1,7 @@
 .blockCardList {
     font-size: 20px;
     color: #FCE3CB;
-    background-color: #494947;
+    /* background-color: #494947; */
     padding: 10px;
     border-radius: 3px;
     text-align: left;
@@ -22,7 +22,6 @@
 @media screen and (max-width: 1000px) {
     .blockCardList li {
         display: grid;
-        margin: 10px;
         padding-top: 5px;
         text-align: left;
     }

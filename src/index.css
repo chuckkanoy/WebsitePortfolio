@@ -5,14 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('\hex.png');
+  background-image: url('hex.png');
   background-color: #fce3cb;
   background-size: 25%;
   background-repeat: repeat;
   overflow-x: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: f;
+  font-size: x-small;
+  src: url('DePixelBreit.otf');
+  font-weight: lighter;
+}
+
+h1 {
+  font-family: f;
 }

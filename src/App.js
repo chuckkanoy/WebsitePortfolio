@@ -1,4 +1,5 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Header from './components/header/Header';
 
 import './App.css';
 import About from './pages/about/About';
@@ -9,11 +10,13 @@ import Projects from './pages/projects/Projects';
 import Resume from './pages/resume/Resume';
 import Opening from './pages/opening/Opening';
 import BlogDetail from './pages/blog/BlogDetail/BlogDetail';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
+          <Header />
           <Switch>
             <Route path="/about" component={About} />
             <Route path="/blog/:blog" component={BlogDetail}/>
@@ -24,6 +27,7 @@ function App() {
             <Route path={"/home"} component={Home} />
             <Route path={"/"} component={Opening} />
           </Switch>
+          <Footer />
       </div>
     </Router>
   );

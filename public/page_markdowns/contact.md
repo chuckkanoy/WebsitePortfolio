@@ -1,4 +1,9 @@
-## Looking to get ahold of me?
+# Looking to get ahold of me?
 
 ---
-You can email me [here](https://mail.google.com/mail/?view=cm&to=ch.kanoy@gmail.com&su=Professional%20Inquiry%20from%20Website). You can update the subject of the email if you'd like, but that is not required. Thank you for reaching out!
+The following are places you can reach me:
+
+- [Linkedin](https://www.linkedin.com/in/charles-k-a7089a123/)
+- [GitHub](https://github.com/chuckkanoy)
+
+If none of those work for you, you can email me at ch.kanoy@gmail.com. Thank you for your interest, and  I look forward to working with you!

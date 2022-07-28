@@ -2,8 +2,6 @@ import React from 'react';
 
 import Dropdown from '../../components/dropdown/Dropdown';
 import './Resume.css';
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
 
 function Resume() {
     const skills = {
@@ -140,7 +138,6 @@ function Resume() {
 
     return (
         <>
-            <Header />
             <p className="objective">
                 <text className="declaration">var </text>
                 <text className="variableName">objective</text>=
@@ -152,7 +149,6 @@ function Resume() {
                 <Dropdown title="Professional Development Experience" content={display(workExperience)} />
                 <Dropdown title="Leadership" content={display(leadership)} />
             </div>
-            <Footer />
         </>
     );
 }

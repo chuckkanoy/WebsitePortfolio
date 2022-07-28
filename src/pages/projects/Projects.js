@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
 import ProjectCard from './projectCard/ProjectCard';
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
 import './Projects.css'
 import {get, GITHUB_PROJECTS} from '../../API'
 
@@ -16,7 +14,6 @@ function Projects() {
 
     return (
         <>
-            <Header />
             <div className="projectsContainer">
                 {projects.map((individual, index) => {
                     var element = ""
@@ -33,7 +30,6 @@ function Projects() {
                     return element
                 })}
             </div>
-            <Footer />
         </>
     );
 }

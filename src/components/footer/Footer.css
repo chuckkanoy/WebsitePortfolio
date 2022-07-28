@@ -1,10 +1,7 @@
 .footerContainer {
     background-color: #494947;
     width: 100%;
-    position: sticky;
-    bottom: 0px;
     margin-top: 20px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start; */
+    bottom: 0vh;
+    position: fixed;
 }

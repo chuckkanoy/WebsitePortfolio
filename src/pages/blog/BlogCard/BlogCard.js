@@ -2,13 +2,13 @@ import React from 'react';
 
 import './BlogCard.css'
 
-export default function BlogCard({blog}) {
+export default function BlogCard(props) {
     return (
         <div className="blogCard">
-            <ul className="blockCardList">
-                <li>{blog.title}</li>
-                <li>{blog.subject}</li>
-                <li>{blog.date}</li>
+            <ul className="blockCardList" style={{backgroundColor: props.background}}>
+                <li>{props.blog.title}</li>
+                <li>{props.blog.subject}</li>
+                <li>{props.blog.date}</li>
             </ul>
         </div>
     );
