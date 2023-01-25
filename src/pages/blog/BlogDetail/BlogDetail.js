@@ -1,6 +1,6 @@
 import React, {useState, useEffect}from 'react';
 import ReactMarkdown from 'react-markdown';
-import { useHistory, useParams } from 'react-router';
+import { useNavigate, useParams } from 'react-router';
 import test_blogs from '../Blogs.json';
 import './BlogDetail.css';
 
@@ -10,7 +10,7 @@ export default function BlogDetail() {
     const [subject, setSubject] = useState("");
 
     var {blog} = useParams();
-    var history = useHistory();
+    var history = useNavigate();
 
     useEffect(() => {
         var pathRoute = "";

@@ -38,17 +38,14 @@ function ProjectCard(props) {
             key={project.id}
             style={{backgroundColor: props.backgroundColor}}
         >
-            <div className="cardDetails">
-                <h3>{project.name}</h3>
-                <p>{created.toLocaleDateString('en-US')}-
-                {updated.toLocaleDateString('en-US')}</p>
-                <div className='languages'>
-                    {Object.keys(languages).map((language) => {
-                        return <p>{language}</p>
-                    })}
-                </div>
+            <h3>{project.name}</h3>
+            <p>{created.toLocaleDateString('en-US')}-
+            {updated.toLocaleDateString('en-US')}</p>
+            <div className='languages'>
+                {Object.keys(languages).map((language) => {
+                    return <p key={`${project.name}.${language}`}>{language}</p>
+                })}
             </div>
-            {/* {formattedThumbnail} */}
         </div>
     );
 }

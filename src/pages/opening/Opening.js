@@ -1,16 +1,16 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 import './Opening.css';
 
 function Opening() {
-    const history = useHistory();
+    const history = useNavigate();
 
     return (
         <div
             className="opening"
             onClick={() => {
-                history.push('/home');
+                history('/home');
             }}
         >
             <h1 className="glow">Charles Kanoy</h1>

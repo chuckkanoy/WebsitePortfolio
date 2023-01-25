@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Header from './components/header/Header';
 
 import './App.css';
@@ -17,16 +17,16 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
           <Header />
-          <Switch>
-            <Route path="/about" component={About} />
-            <Route path="/blog/:blog" component={BlogDetail}/>
-            <Route path="/blog" component={Blog} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/resume" component={Resume} />
-            <Route path={"/home"} component={Home} />
-            <Route path={"/"} component={Opening} />
-          </Switch>
+          <Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/blog/:blog" element={<BlogDetail />}/>
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path={"/home"} element={<Home />} />
+            <Route path={"/"} element={<Opening />} />
+          </Routes>
           <Footer />
       </div>
     </Router>

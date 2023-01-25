@@ -4,8 +4,6 @@
     color: #fce3cb;
     top: 0px;
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
     position: sticky;
 }
 
@@ -20,6 +18,14 @@
 .navBar {
     margin-left: 20px;
     float: left;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .navContainer {
+    }
+    .navBar {
+        margin-left: 0px;
+    }
 }
 
 .navName:hover {

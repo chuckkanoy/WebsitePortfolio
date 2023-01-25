@@ -1,13 +1,18 @@
 .projectsContainer {
-    width: 100%;
+    width: 50%;
     justify-content: center;
-    margin-left: 50%;
+    /* margin-left: 50%; */
     margin-top: 20px;
     margin-bottom: 80px;
+    background-color: black;
+
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 480px) {
     .projectsContainer {
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
         width: 100%;
     }
 }
