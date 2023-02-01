@@ -9,6 +9,7 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: #ffffff;
+  margin-bottom: 8%;
 }
 
 @keyframes fadeIn {
@@ -28,10 +29,7 @@
 
 .md:before {
   content: "";
-  position: absolute;
   width: 0;
-  height: 2px;
-  bottom: 0;
   left: 0;
   background-color: #FFF;
   visibility: hidden;

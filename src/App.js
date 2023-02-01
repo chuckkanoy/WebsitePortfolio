@@ -17,7 +17,7 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
           <Header />
-          <Routes>
+          <Routes className = "mainBody">
             <Route path="/about" element={<About />} />
             <Route path="/blog/:blog" element={<BlogDetail />}/>
             <Route path="/blog" element={<Blog />} />
