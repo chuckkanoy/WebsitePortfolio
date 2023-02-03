@@ -3,7 +3,6 @@ import ReactMarkdown from 'react-markdown';
 import { useNavigate, useParams } from 'react-router';
 import test_blogs from '../Blogs.json';
 import './BlogDetail.css';
-import '..\\src\\components\\header\\Header.scss'
 
 export default function BlogDetail() {
     const [blogContent, setBlogContent] = useState("");
