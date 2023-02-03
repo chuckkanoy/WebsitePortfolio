@@ -6,7 +6,7 @@ import './Header.scss';
 const pages = [
     "Home",
     "Projects", 
-    "Resume", 
+    // "Resume", 
     "Blog", 
     "About", 
     "Contact"

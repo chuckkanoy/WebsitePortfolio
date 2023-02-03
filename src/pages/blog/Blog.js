@@ -14,22 +14,16 @@ function Blog() {
 
                     if(index % 3 === 0)
                         element = <Link to={`/blog/${blog.id}`}>
-                            <BlogCard blog={blog} background="#7494EA"/>
+                            <BlogCard blog={blog} background="var(--sky-blue)"/>
                         </Link>
-                        // element = <ProjectCard project={individual} key={individual.id} 
-                        //     backgroundColor="#7494EA"/>
                     else if(index % 3 === 1)
                         element = <Link to={`/blog/${blog.id}`}>
-                            <BlogCard blog={blog} background="#49BEAA"/>
+                            <BlogCard blog={blog} background="var(--cyan)"/>
                         </Link>
-                        // element = <ProjectCard project={individual} key={individual.id} 
-                        //     backgroundColor="#49BEAA"/>
                     else
                         element = <Link to={`/blog/${blog.id}`}>
-                            <BlogCard blog={blog} background="#EE6C4D"/>
+                            <BlogCard blog={blog} background="var(--orange)"/>
                         </Link>
-                        // element = <ProjectCard project={individual} key={individual.id} 
-                        //     backgroundColor="#EE6C4D"/>
                     return element
                 })}
             </div>

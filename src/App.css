@@ -1,42 +1,51 @@
 .App {
-  text-align: center;
-  animation-name: fadeIn;
   animation-duration: 2;
-  background-image: 'geo.png';
-  background-repeat: repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
-  color: #ffffff;
+  color: var(--off-white);
   margin-bottom: 8%;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+.markdown {
+  width: 75%;
+  text-align: left;
+  font-size: 20px;
+  color: var(--off-white);
+  margin-top: 20px;
+  background-color: var(--grey);
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-device-width: 480px)
+{
+  .markdown {
+      width: 80%;
+      margin-bottom: 10%;
+  }
 }
 
-.md {
+.markdown h1, h2{
+  text-align: center;
+}
+
+.markdown a {
+  padding: 0px;
+  margin: 0px;
+  color: var(--off-white);
   text-decoration: none;
-  color: #ffffff;
-  position: relative;
+  font-weight: bold;
 }
 
-.md:before {
-  content: "";
-  width: 0;
-  left: 0;
-  background-color: #FFF;
-  visibility: hidden;
-  transition: all .3s ease-in-out;
+.markdown a:hover {
+  color: var(--grey);
+  background-color: var(--off-white);
+  padding: 2px;
+  margin: -2px;
+  border-radius: 4px;
 }
 
-.md:hover:before {
-  visibility: visible;
-  width: 100%;
+.markdown hr {
+  width: 50%;
 }

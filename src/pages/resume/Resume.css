@@ -1,7 +1,7 @@
 .resumeContainer {
     max-width: 100%;
     width: 90%;
-    background-color: #7494EA;
+    background-color: var(--orange);
 }
 
 .leadershipContainer * {
@@ -30,13 +30,13 @@
 
 .objective {
     font-size: 20px;
-    background-color: #494947;
+    background-color: var(--grey);
     padding: 20px;
     border-radius: 5px;
 }
 
 .literal {
-    color: #EE6C4D;
+    color: var(--orange);
 }
 
 @media screen and (max-width: 1000px) {

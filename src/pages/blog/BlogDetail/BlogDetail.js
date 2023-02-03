@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import { useNavigate, useParams } from 'react-router';
 import test_blogs from '../Blogs.json';
 import './BlogDetail.css';
+import '..\\src\\components\\header\\Header.scss'
 
 export default function BlogDetail() {
     const [blogContent, setBlogContent] = useState("");
@@ -39,18 +40,16 @@ export default function BlogDetail() {
             <ReactMarkdown
             components={{
                 code: ({node, ...props}) => <span style={{
-                    backgroundColor: '#fce3cb',
-                    color: '#494947',
+                    backgroundColor: 'var(--off-white)',
+                    color: 'var(--grey)',
                     fontWeight: 'bold',
                     padding: '1px',
                     borderRadius: '4px',
                 }} {...props} />,
-                a: ({node, ...props}) => <a style={{
-                    color: '#fce3cb'
-                }} {...props} >{}</a>,
+                a: ({node, ...props}) => <a {...props}>{}</a>,
                 blockquote: ({node, ...props}) => <div style={{
-                    backgroundColor: 'white',
-                    color: '#fce3cb',
+                    backgroundColor: 'var(--off-white)',
+                    color: 'var(--grey)',
                     padding: '0px',
                     borderRadius: '4px'
                 }} {...props} />

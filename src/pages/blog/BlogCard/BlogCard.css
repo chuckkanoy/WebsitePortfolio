@@ -1,7 +1,6 @@
 .blockCardList {
     font-size: 20px;
-    color: #FCE3CB;
-    /* background-color: #494947; */
+    color: var(--off-white);
     padding: 10px;
     border-radius: 3px;
     text-align: left;
@@ -9,8 +8,8 @@
 }
 
 .blockCardList:hover {
-    background-color: #7494EA;
-    color: #494947;
+    background-color: var(--orange);
+    color: var(--grey);
 }
 
 .blockCardList li {
@@ -20,9 +19,14 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .blockCardList {
+        border-radius: 0;
+    }
+
     .blockCardList li {
         display: grid;
         padding-top: 5px;
         text-align: left;
+        width: 100%;
     }
 }

@@ -1,14 +1,11 @@
 .projectsContainer {
-    width: 50%;
+    width: var(--list-width);
     justify-content: center;
-
 }
 
 @media screen and (max-width: 480px) {
     .projectsContainer {
-        justify-content: center;
-        align-items: center;
         margin-left: 0%;
-        width: 100%;
+        width: var(--list-width-mobile);
     }
 }

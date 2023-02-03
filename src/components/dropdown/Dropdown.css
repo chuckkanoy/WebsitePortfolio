@@ -1,7 +1,7 @@
 .dropdownClicker {
     cursor: pointer;
     padding: 10px;
-    background-color: #494947;
+    background-color: var(--grey);
     border-radius: 2px;
     /* margin: 5px; */
     text-align: left;

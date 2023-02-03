@@ -21,8 +21,8 @@ function Home() {
             <ReactMarkdown
             components={{
                 code: ({node, ...props}) => <span style={{
-                    backgroundColor: 'white',
-                    color: '#ee82ee',
+                    backgroundColor: 'var(--off-white)',
+                    color: 'var(--grey)',
                     padding: '0px',
                     borderRadius: '4px',
                 }} {...props} />,
@@ -30,8 +30,8 @@ function Home() {
                 {...props} >{}</a>
                 ,
                 blockquote: ({node, ...props}) => <div style={{
-                    backgroundColor: 'white',
-                    color: '#ee82ee',
+                    backgroundColor: 'var(--off-white)',
+                    color: 'var(--grey)',
                     padding: '0px',
                     borderRadius: '4px'
                 }} {...props} />

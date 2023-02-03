@@ -19,13 +19,13 @@ function Projects() {
 
                 if(index % 3 === 0)
                     element = <ProjectCard project={individual} key={individual.id} 
-                        backgroundColor="#7494EA"/>
+                        backgroundColor="var(--sky-blue)"/>
                 else if(index % 3 === 1)
                     element = <ProjectCard project={individual} key={individual.id} 
-                        backgroundColor="#49BEAA"/>
+                        backgroundColor="var(--cyan)"/>
                 else
                     element = <ProjectCard project={individual} key={individual.id} 
-                        backgroundColor="#EE6C4D"/>
+                        backgroundColor="var(--orange)"/>
                 return element
             })}
         </div>

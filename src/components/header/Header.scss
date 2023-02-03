@@ -1,14 +1,14 @@
 .navContainer {
-    background-color: #494947;
+    background-color: var(--grey);
     text-align: center;
-    color: #fce3cb;
+    color: var(--off-white);
     top: 0px;
     width: 100%;
     position: sticky;
 }
 
 .navName {
-    color: #fce3cb;
+    color: var(--off-white);
     text-decoration: none;
     float: right;
     font-weight: bold;
@@ -21,15 +21,13 @@
 }
 
 @media only screen and (max-device-width: 480px) {
-    .navContainer {
-    }
     .navBar {
         margin-left: 0px;
     }
 }
 
 .navName:hover {
-    color: #FFFFFF;
+    color: var(--off-white);
     text-decoration: none;
     animation-name: flicker-1;
     animation-duration: .2s;
@@ -39,7 +37,7 @@
 
 .navLink {
     margin-top: 20px;
-    color: #fce3cb;
+    color: var(--off-white);
     text-decoration: none;
     padding: 10px;
     border-radius: 2px;
@@ -49,8 +47,8 @@
 }
 
 .navLink:hover {
-    background-color: #fce3cb;
-    color: #494947;
+    background-color: var(--off-white);
+    color: var(--grey);
     animation-name: rise;
     animation-duration: .2s;
     animation-fill-mode: forwards;
