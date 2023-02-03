@@ -14,7 +14,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  background-image: url('..\\public\\assets\\images\\hex.png');
+  background-image: url('/public/assets/images/hex.png');
   background-color: var(--off-white);
   background-size: 25%;
   background-repeat: repeat;
@@ -29,7 +29,7 @@ code {
 @font-face {
   font-family: f;
   font-size: x-small;
-  src: url('..\\public\\assets\\fonts\\DePixelBreit.otf');
+  src: url('/public/assets/fonts/DePixelBreit.otf');
   font-weight: lighter;
 }
 
