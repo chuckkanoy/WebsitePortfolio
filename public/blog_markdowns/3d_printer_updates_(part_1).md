@@ -8,4 +8,4 @@ Installing these upgrades was fairly straightforward. The only part of the insta
 
 After everything was installed, my 3D printer produced a pretty clean Benchy. I can safely say that I enjoyed the process of upgrading my Ender 3 and would definitely consider it an essential part of the hobby to assure improved consistent quality prints.
 
-![3D Benchy](/public/assets/blog_images/3DBenchy.jpg)
+![3D Benchy](/src/pages/blog/blog_images/3DBenchy.jpg)
