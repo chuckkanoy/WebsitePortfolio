@@ -7,5 +7,3 @@ I knew I wanted to keep the cost of my initial upgrades to a minimum, just to ma
 Installing these upgrades was fairly straightforward. The only part of the installation process that caused me some difficulty was installing the all metal extruder because I stored my old extruder parts near the new ones (along with some spare parts from the rest of the upgrades). I needed to change the screw that maintains the extruder spring tension because the screw I was using (likely the one that did not come with the extruder) was not long enough to adjust the tension. Once I used the correct screw and adjusted the tension just right, my extruder was drawing the right amount of filament for my prints.
 
 After everything was installed, my 3D printer produced a pretty clean Benchy. I can safely say that I enjoyed the process of upgrading my Ender 3 and would definitely consider it an essential part of the hobby to assure improved consistent quality prints.
-
-![3D Benchy](/src/pages/blog/blog_images/3DBenchy.jpg)
