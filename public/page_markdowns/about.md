@@ -1,4 +1,4 @@
-# So you wanna learn more about me
+# More About Me
 
 ---
 Hi, I am Charles Kanoy, but I tend to go by Chuck. Growing up, my dad was in the Air Force, so I've had to move around a bit. Fortunately, I haven't had to move nearly as much as some of my friends at the time. This has brought me to be more adaptive to changing social environments and curriculum.
