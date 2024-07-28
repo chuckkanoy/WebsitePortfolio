@@ -1,5 +1,4 @@
 import React, {useState, useEffect}from 'react';
-import ReactMarkdown from 'react-markdown';
 import { useNavigate, useParams } from 'react-router';
 import test_blogs from '../Blogs.json';
 import './BlogDetail.css';
@@ -36,26 +35,9 @@ export default function BlogDetail() {
 
     return (
         <>
-            <ReactMarkdown
-            components={{
-                code: ({node, ...props}) => <span style={{
-                    backgroundColor: 'var(--off-white)',
-                    color: 'var(--grey)',
-                    fontWeight: 'bold',
-                    padding: '1px',
-                    borderRadius: '4px',
-                }} {...props} />,
-                a: ({node, ...props}) => <a {...props}>{}</a>,
-                blockquote: ({node, ...props}) => <div style={{
-                    backgroundColor: 'var(--off-white)',
-                    color: 'var(--grey)',
-                    padding: '0px',
-                    borderRadius: '4px'
-                }} {...props} />
-            }}
-            className="markdown">
-                {`${subject}&emsp;&emsp;${date}\n${blogContent}`}
-            </ReactMarkdown>
+            <div className = "markdown" dangerouslySetInnerHTML= {
+                {__html: `${subject}&emsp;&emsp;${date}\n${blogContent}`}
+            } />
         </>
     );
 }

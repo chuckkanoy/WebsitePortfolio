@@ -30,7 +30,7 @@ if __name__ == '__main__':
         if subject == '':
             print("Blog Type may not be blank!")
 
-    path_route = "\{}.md".format(blog_name.replace(' ', '_').lower())
+    path_route = "\{}.html".format(blog_name.replace(' ', '_').lower())
     today = date.today().strftime('%x')
 
     blog_data.insert(0, {
@@ -46,4 +46,17 @@ if __name__ == '__main__':
         f.write(json_object)
 
     file = open("{}{}".format(DESTINATION_PATH, path_route), 'w')
-    file.write('# {}'.format(blog_name))
+    file.write(
+        """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{}</h1>
+    <img src="../assets/blog_images/3DBenchy.jpg" width="300px"/>
+</body>
+</html>
+    """.format(blog_name))

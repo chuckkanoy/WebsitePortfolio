@@ -3,14 +3,14 @@
         "id": "bdd7b368-5706-4466-9ef2-038ee3146790",
         "title": "3D Printer Updates (Part 1)",
         "subject": "3D Printing",
-        "pathRoute": "\\blog_markdowns\\\\3d_printer_updates_(part_1).md",
+        "pathRoute": "\\blog_markdowns\\\\3d_printer_updates_(part_1).html",
         "date": "03/08/23"
     },
     {
         "id": "1",
         "title": "First Blog",
         "subject": "Development",
-        "pathRoute": "/blog_markdowns/first_blog.md",
+        "pathRoute": "/blog_markdowns/first_blog.html",
         "date": "5/12/2021"
     }
 ]
