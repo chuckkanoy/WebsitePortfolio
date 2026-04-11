@@ -1,6 +1,4 @@
-import React from 'react';
-import {MDBIcon, MDBContainer} from 'mdbreact';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import {MDBIcon} from 'mdb-react-ui-kit';
 
 import './Footer.css';
 import {GITHUB, LINKEDIN} from '../Constants.js';
@@ -8,14 +6,12 @@ import {GITHUB, LINKEDIN} from '../Constants.js';
 function Footer() {
     return (
         <div className='footerContainer'>
-            <MDBContainer className="footer">
-                <a href={LINKEDIN}>
-                    <MDBIcon fab icon="linkedin-in" className="navLink" size="1x"/>
-                </a>
-                <a href={GITHUB}>
-                    <MDBIcon fab icon="github" className="navLink" size="1x"/>
-                </a>
-            </MDBContainer>
+            <a href={LINKEDIN} className="navLink" >
+                <MDBIcon fab icon="linkedin-in" size="lg"/>
+            </a>
+            <a href={GITHUB}className="navLink" >
+                <MDBIcon fab icon="github" size="lg"/>
+            </a>
         </div>
     );
 }

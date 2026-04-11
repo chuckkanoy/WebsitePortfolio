@@ -1,0 +1,67 @@
+.cardContainer {
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    justify-content: left;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+}
+
+.cardContainer:hover {
+    animation-name: shift-right;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    font-weight: bold;
+    // display: inline-block;
+}
+
+.cardContainer:active {
+    animation-name: shift-left;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shift-right {
+    from {
+        transform: translate(0px, 0px);
+    }
+    to {
+        transform: translate(40px, 0px);
+    }
+}
+
+@keyframes shift-left {
+    from {
+        transform: translate(40px, 0px);
+    }
+    to {
+        transform: translate(0px, 0px);
+    }
+}
+
+.languages {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.languages * {
+    padding: 5px;
+    margin-left: 5px;
+    background-color: var(--off-white);
+    color: var(--grey);
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 480px) {
+    .cardContainer {
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+

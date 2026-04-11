@@ -1,4 +1,3 @@
-import React from 'react';
 import {Link} from 'react-router-dom';
 
 import './Header.scss';
@@ -6,7 +5,6 @@ import './Header.scss';
 const pages = [
     "Home",
     "Projects", 
-    // "Resume", 
     "Blog", 
     "About", 
     "Contact"

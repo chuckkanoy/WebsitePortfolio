@@ -1,4 +1,4 @@
-import React, {useState, useEffect}from 'react';
+import {useState, useEffect}from 'react';
 import { useNavigate, useParams } from 'react-router';
 import test_blogs from '../Blogs.json';
 import './BlogDetail.css';

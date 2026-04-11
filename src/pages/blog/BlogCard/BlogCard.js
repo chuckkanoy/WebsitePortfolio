@@ -1,6 +1,4 @@
-import React from 'react';
-
-import './BlogCard.css'
+import './BlogCard.scss'
 
 export default function BlogCard(props) {
     return (

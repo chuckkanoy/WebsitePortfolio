@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-import './ProjectCard.css'
+import './ProjectCard.scss'
 import {get} from '../../../API';
 
 function ProjectCard(props) {

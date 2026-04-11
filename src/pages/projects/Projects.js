@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 
 import ProjectCard from './projectCard/ProjectCard';
 import './Projects.css'
@@ -15,18 +15,17 @@ function Projects() {
     return (
         <div className="projectsContainer">
             {projects.map((individual, index) => {
-                var element = ""
+                var backgroundColor = ""
 
                 if(index % 3 === 0)
-                    element = <ProjectCard project={individual} key={individual.id} 
-                        backgroundColor="var(--sky-blue)"/>
+                    backgroundColor="var(--sky-blue)"
                 else if(index % 3 === 1)
-                    element = <ProjectCard project={individual} key={individual.id} 
-                        backgroundColor="var(--cyan)"/>
+                    backgroundColor="var(--cyan)"
                 else
-                    element = <ProjectCard project={individual} key={individual.id} 
-                        backgroundColor="var(--orange)"/>
-                return element
+                    backgroundColor="var(--orange)"
+
+                return <ProjectCard project={individual} key={individual.id}
+                        backgroundColor={backgroundColor}/>
             })}
         </div>
     );
