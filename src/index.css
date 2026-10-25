@@ -6,7 +6,8 @@
   --cyan: #35326C;
 
   --list-width: 80%;
-  --list-width-mobile: 100%
+  --list-width-mobile: 100%;
+  --mobile-pixel-width: 480px;
 }
 
 body {

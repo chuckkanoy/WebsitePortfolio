@@ -10,6 +10,9 @@
     text-align: left;
     padding: 20px;
     position: relative;
+    animation: shift-left;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
 }
 
 .cardContainer:hover {
@@ -27,20 +30,14 @@
 }
 
 @keyframes shift-right {
-    from {
-        transform: translate(0px, 0px);
-    }
     to {
-        transform: translate(40px, 0px);
+        padding-left: 40px;
     }
 }
 
 @keyframes shift-left {
     from {
-        transform: translate(40px, 0px);
-    }
-    to {
-        transform: translate(0px, 0px);
+        padding-left: 40px;
     }
 }
 
@@ -58,7 +55,7 @@
     border-radius: 3px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: var(--mobile-pixel-width)) {
     .cardContainer {
         width: 100%;
         border-radius: 0px;

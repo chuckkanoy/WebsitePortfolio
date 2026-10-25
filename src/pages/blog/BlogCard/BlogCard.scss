@@ -7,6 +7,9 @@
     font-weight: bold;
     margin-top: 10px;
     position: relative;
+    animation-name: shift-left;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
 }
 
 .blockCardList li {
@@ -29,24 +32,18 @@
 }
 
 @keyframes shift-right {
-    from {
-        transform: translate(0px, 0px);
-    }
     to {
-        transform: translate(40px, 0px);
+        padding-left: 40px;
     }
 }
 
 @keyframes shift-left {
     from {
-        transform: translate(40px, 0px);
-    }
-    to {
-        transform: translate(0px, 0px);
+        padding-left: 40px;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: var(--mobile-pixel-width)) {
     .blockCardList {
         border-radius: 0;
     }

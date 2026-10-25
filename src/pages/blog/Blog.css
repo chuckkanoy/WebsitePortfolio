@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: var(--mobile-pixel-width)) {
     .blogCardContainer {
         width: var(--list-width-mobile);
     }
